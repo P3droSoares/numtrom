@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +17,171 @@ body {
   background-color: #e6e9f0;
 }
 #calc-body {
-  width: 10vw;
-  height: 20vh;
+  width: 17.5rem;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px #d3dae0;
 
   background-color: #ecf0f3;
 }
-.key {
+#viewfielder {
+  width: 15rem;
+  height: 5rem;
+  margin-bottom: 0.7rem;
+  padding: 1rem;
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #d3dae080 inset;
+
+  text-align: right;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  background-color: #ecf0f3;
 }
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "ac-key div-key mult-key del-key"
+    "key-7 key-8 key-9 sub-key"
+    "key-4 key-5 key-6 sum-key"
+    "key-1 key-2 key-3 result-key"
+    "perce-key key-0 float-key result-key";
+  justify-items: center;
+  align-items: center;
+}
+.key {
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 100px;
+  border: none;
+
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+
+  box-shadow: 3px 3px 10px #d3dae0, -3px -3px 10px rgb(255, 250, 250);
+
+  transition: 0.3s;
+}
+.key:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+#result-key {
+  width: 2.5rem;
+  height: 100%;
+
+  border: none;
+  border-radius: 100px;
+
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 800;
+
+  box-shadow: 5px 5px 10px #d3dae0, -3px -3px 12px rgb(255, 250, 250);
+
+  transition: 0.3s;
+
+  color: #ecf0f3;
+  background-color: #219ebc;
+}
+#result-key:active {
+  transform: translateY(3px);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.switch_theme_box {
+  position: relative;
+  top: -15rem;
+}
+
 .black-key {
-  color: #35393c;
+  color: #5a5a5a;
+  background-color: #e8ecef;
+}
+.blue-key {
+  color: #219ebc;
+  background-color: #e8ecef;
+}
+.orange-key {
+  color: #efa900;
+  background-color: #1b1b1b;
+}
+.white-key {
+  color: #e8ecef;
+  background-color: #1b1b1b;
+}
+
+/*  SET GRID AREA  */
+#ac-key {
+  grid-area: ac-key;
+}
+#div-key {
+  grid-area: div-key;
+}
+#mult-key {
+  grid-area: mult-key;
+}
+#del-key {
+  grid-area: del-key;
+}
+#key-7 {
+  grid-area: key-7;
+}
+#key-8 {
+  grid-area: key-8;
+}
+#key-9 {
+  grid-area: key-9;
+}
+#sub-key {
+  grid-area: sub-key;
+}
+#key-4 {
+  grid-area: key-4;
+}
+#key-5 {
+  grid-area: key-5;
+}
+#key-6 {
+  grid-area: key-6;
+}
+#sum-key {
+  grid-area: sum-key;
+}
+#key-1 {
+  grid-area: key-1;
+}
+#key-2 {
+  grid-area: key-2;
+}
+#key-3 {
+  grid-area: key-3;
+}
+#perce-key {
+  grid-area: perce-key;
+}
+#key-0 {
+  grid-area: key-0;
+}
+#float-key {
+  grid-area: float-key;
+}
+#result-key {
+  grid-area: result-key;
 }
