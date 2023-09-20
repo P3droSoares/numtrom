@@ -38,8 +38,44 @@
 .key:hover {
   transform: scale(0.9);
 }
+#result-key {
+  width: 5rem;
+  height: 5rem;
+
+  border: none;
+  border-radius: 8px;
+  border-radius: 100%;
+
+  font-size: 1.3rem;
+  font-family: "Poppins";
+  font-weight: 500;
+
+  transition: 0.4s;
+}
 #switch_theme {
-  position: absolute;
-  float: right;
+  display: none;
+}
+.switch_theme_box > label {
+  width: 5rem;
+  height: 2.3rem;
+  padding: 0.5rem;
   margin-top: 1rem;
+
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#light-mode path,
+#dark-mode {
+  width: 1.3rem;
+}
+#dark-mode {
+  width: 1.1rem;
+}
+@media (max-width: 768px) {
+  #viewfielder {
+    width: 50vw;
+  }
 }
