@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.switch_theme_box {
+  width: 100vw;
+  height: 5vh;
+  padding-right: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#calc-body {
+  width: 100vw;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#viewfielder-box {
+  margin-bottom: 0.8rem;
+}
+#keyboard {
+  width: 100vw;
+  height: 28rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

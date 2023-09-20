@@ -1,0 +1,11 @@
+{
+  "name": "numtron",
+  "version": "1.0.0",
+  "description": "Esse é um projeto de uma calculadora WEB",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Soares",
+  "license": "ISC"
+}
